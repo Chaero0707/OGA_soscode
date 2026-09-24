@@ -1,0 +1,53 @@
+/* 기본 리셋 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding-top: 60px; /* 상단 바가 콘텐츠를 가리지 않도록 여백 추가 */
+}
+
+/* 상단 바 스타일 */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* 로고는 왼쪽, 메뉴는 오른쪽에 배치 */
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 15px 30px;
+  position: fixed; /* 화면 상단에 고정 */
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* 다른 요소보다 항상 위에 보이도록 설정 */
+}
+
+/* 로고 스타일 */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* 메뉴 스타일 */
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+/* 마우스 올렸을 때 효과 */
+.nav-links a:hover {
+  color: #ffdd57;
+}
